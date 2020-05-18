@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtName"
+        android:hint="@string/username"
+        android:layout_marginStart="@dimen/marginLength"
+        android:layout_marginEnd="@dimen/marginLength"
+        android:layout_marginTop="@dimen/marginLength"
+        android:autofillHints=""
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_below="@id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtEmail"
+        android:hint="@string/email_id"
+        android:layout_marginStart="@dimen/marginLength"
+        android:layout_marginEnd="@dimen/marginLength"
+        android:layout_marginTop="@dimen/marginLength"
+        android:autofillHints=""
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_below="@id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPassword"
+        android:hint="@string/password"
+        android:layout_marginStart="@dimen/marginLength"
+        android:layout_marginEnd="@dimen/marginLength"
+        android:layout_marginTop="@dimen/marginLength"
+        android:autofillHints=""
+        android:inputType="textPassword"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:layout_below="@id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtConfirmPassword"
+        android:hint="@string/confirm_password"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:inputType="textPassword"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:layout_below="@id/edtConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtAddress"
+        android:hint="@string/address"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:layout_below="@id/edtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtCity"
+        android:hint="@string/city"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:inputType="text"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:layout_below="@id/edtCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtZipCode"
+        android:hint="@string/zip_code"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:inputType="textPostalAddress"
+        tools:ignore="TextFields" />
+
+
+    <TableRow
+
+        android:id="@+id/btnRow"
+        android:layout_below="@+id/edtZipCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginLength"
+            android:textSize="@dimen/size1"
+            android:text="@string/register"
+            android:gravity="center"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@color/colorBlue"/>
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginLength"
+            android:textSize="@dimen/size1"
+            android:text="@string/cancel"
+            android:gravity="center"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@color/colorRed"/>
+    </TableRow>
+
+</RelativeLayout>

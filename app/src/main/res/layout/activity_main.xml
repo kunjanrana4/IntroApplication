@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/circle_shape"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_below="@+id/imgProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/size1"
+        android:text="@string/welcome" />
+    <TableRow
+        android:layout_below="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size1"
+            android:text="@string/login"
+            android:gravity="center"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@color/colorBlue" />
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginLength"
+            android:textSize="@dimen/size1"
+            android:text="@string/register"
+            android:gravity="center"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@color/colorBlue"/>
+    </TableRow>
+
+</RelativeLayout>

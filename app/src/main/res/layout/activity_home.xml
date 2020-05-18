@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_profile"
+        android:gravity="center"
+        android:textSize="@dimen/size1"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size1"
+        android:layout_marginTop="@dimen/marginLength"
+        android:layout_marginLeft="@dimen/marginLength"
+        android:layout_marginRight="@dimen/marginLength"/>
+
+    <TextView
+        android:layout_below="@+id/txtName"
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size1"
+        android:layout_marginTop="@dimen/marginLength"
+        android:layout_marginLeft="@dimen/marginLength"
+        android:layout_marginRight="@dimen/marginLength"/>
+
+    <TextView
+        android:layout_below="@+id/txtEmail"
+        android:id="@+id/txtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size1"
+        android:layout_marginTop="@dimen/marginLength"
+        android:layout_marginLeft="@dimen/marginLength"
+        android:layout_marginRight="@dimen/marginLength"/>
+
+    <TextView
+        android:layout_below="@+id/txtAddress"
+        android:id="@+id/txtCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size1"
+        android:layout_marginTop="@dimen/marginLength"
+        android:layout_marginLeft="@dimen/marginLength"
+        android:layout_marginRight="@dimen/marginLength"/>
+
+    <TextView
+        android:layout_below="@+id/txtCity"
+        android:id="@+id/txtZipCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size1"
+        android:layout_marginTop="@dimen/marginLength"
+        android:layout_marginLeft="@dimen/marginLength"
+        android:layout_marginRight="@dimen/marginLength"/>
+
+</RelativeLayout>
